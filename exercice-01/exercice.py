@@ -8,12 +8,12 @@ taux_tva = 0.2
 total_ht = prix_ht * quantite
 total_ttc = total_ht * (1 + taux_tva)
 
-# 3. Affichage avec une f-string (:.2f = 2 décimales)
+# 3. Affichage 
 print(f"{quantite} x {produit} : {total_ht:.2f} € HT, soit {total_ttc:.2f} € TTC")
 
 # 4. Le prix arrive sous forme de texte
 prix_texte = "19.90"
-prix_ht = float(prix_texte)  # conversion str -> float
+prix_ht = float(prix_texte) 
 
 total_ht = prix_ht * quantite
 total_ttc = total_ht * (1 + taux_tva)
